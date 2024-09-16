@@ -155,6 +155,9 @@ class YOLOv8OVMS:
          # Draw the label text on the image
         cv2.putText(img, label, (label_x, label_y), cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 0, 0), 1, cv2.LINE_AA)
 
+        # Print test string to container logs
+        print("QQQ")
+
     def run(self):
         if(self.verbose):
             print("Running detection...")
